@@ -1,12 +1,12 @@
-package com.knb;
+package com.rsp;
 
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
-public class KNB {
-  static Scanner sc = new Scanner(System.in);
-  static Random r = new Random();
-  static String a[] = {"rock", "scissors", "paper"};
+class RSP {
+  private static final Scanner sc = new Scanner(System.in);
+  private static final Random r = new Random();
+  private static final String[] a = {"rock", "scissors", "paper"};
 
   public static void main(String[] args) {
     while (true) {
@@ -17,7 +17,7 @@ public class KNB {
     }
   }
 
-  public static void ans() {
+  private static void ans() {
     switch (sc.next()) {
       case "scissors":
       case "rock":
@@ -29,7 +29,7 @@ public class KNB {
     }
   }
 
-  public static boolean YN() {
+  private static boolean YN() {
     switch (sc.next()) {
       case "yes":
         return true;
